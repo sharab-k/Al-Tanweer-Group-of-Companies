@@ -121,20 +121,27 @@ export default function Footer() {
                   <br />Musaffah 14, Abu Dhabi, UAE
                 </p>
               </div>
-              <div className="flex items-start gap-3">
-                <Phone size={15} className="text-emerald-brand mt-0.5 flex-shrink-0" strokeWidth={1.5} />
-                <div className="text-base text-white/60 space-y-0.5">
-                  <a href="tel:+971561277407" className="block hover:text-amber-brand transition-colors">056 1277407</a>
-                  <a href="tel:+971553173594" className="block hover:text-amber-brand transition-colors">055 3173594</a>
-                  <a href="tel:+971588894547" className="block hover:text-amber-brand transition-colors">058 8894547</a>
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-amber-brand group-hover:text-slate-ink transition-colors">
+                  <Phone size={16} className="text-white/70 group-hover:text-slate-ink transition-colors" />
+                </div>
+                <div>
+                  <h4 className="text-[0.7rem] font-semibold tracking-[0.1em] uppercase text-white/40 mb-1.5">Emergency / 24/7 Support</h4>
+                  <a href="tel:00971553173594" className="block hover:text-amber-brand transition-colors">00971553173594</a>
                 </div>
               </div>
-              <div className="flex items-start gap-3">
-                <Mail size={15} className="text-emerald-brand mt-0.5 flex-shrink-0" strokeWidth={1.5} />
-                <a href="mailto:info@al-tanwir.com" className="text-base text-white/60 hover:text-amber-brand transition-colors flex items-center gap-1">
-                  info@al-tanwir.com
-                  <ExternalLink size={11} />
-                </a>
+
+              {/* Email */}
+              <div className="flex items-center gap-4">
+                <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-amber-brand group-hover:text-slate-ink transition-colors">
+                  <Mail size={16} className="text-white/70 group-hover:text-slate-ink transition-colors" />
+                </div>
+                <div>
+                  <h4 className="text-[0.7rem] font-semibold tracking-[0.1em] uppercase text-white/40 mb-1.5">Email Inquiries</h4>
+                  <a href="mailto:altanvirgroup@gmail.com" className="text-base text-white/60 hover:text-amber-brand transition-colors flex items-center gap-1">
+                    altanvirgroup@gmail.com
+                  </a>
+                </div>
               </div>
             </div>
           </div>

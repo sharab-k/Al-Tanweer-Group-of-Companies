@@ -106,15 +106,13 @@ export default function QuoteForm() {
                       <div className="flex items-center gap-3">
                         <Phone size={14} className="text-amber-brand flex-shrink-0" />
                         <div className="text-base text-white/80">
-                          <a href="tel:+971561277407" className="hover:text-amber-brand transition-colors">056 1277407</a>
-                          <span className="text-white/30 mx-1.5">·</span>
-                          <a href="tel:+971553173594" className="hover:text-amber-brand transition-colors">055 3173594</a>
+                          <a href="tel:00971553173594" className="hover:text-amber-brand transition-colors">00971553173594</a>
                         </div>
                       </div>
                       <div className="flex items-center gap-3">
                         <Mail size={14} className="text-amber-brand flex-shrink-0" />
-                        <a href="mailto:info@al-tanwir.com" className="text-base text-white/80 hover:text-amber-brand transition-colors">
-                          info@al-tanwir.com
+                        <a href="mailto:altanvirgroup@gmail.com" className="text-base text-white/80 hover:text-amber-brand transition-colors">
+                          altanvirgroup@gmail.com
                         </a>
                       </div>
                       <div className="flex items-start gap-3">

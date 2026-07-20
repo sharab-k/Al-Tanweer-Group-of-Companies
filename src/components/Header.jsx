@@ -42,15 +42,15 @@ export default function Header() {
               <span className="text-white/70">Musaffah 14, Abu Dhabi, UAE</span>
             </span>
           </div>
-          <div className="hidden sm:flex items-center gap-5">
-            <a href="tel:+971561277407" className="flex items-center gap-1.5 text-white/70 hover:text-amber-brand transition-colors">
-              <Phone size={12} strokeWidth={2} />
-              056 1277407
+          <div className="flex items-center gap-5">
+            <a href="tel:00971553173594" className="flex items-center gap-1.5 text-white/70 hover:text-amber-brand transition-colors">
+              <Phone size={13} strokeWidth={2} />
+              00971553173594
             </a>
-            <span className="w-px h-3 bg-white/20" />
-            <a href="mailto:info@al-tanwir.com" className="flex items-center gap-1.5 text-white/70 hover:text-amber-brand transition-colors">
-              <Mail size={12} strokeWidth={2} />
-              info@al-tanwir.com
+            <span className="text-white/20">|</span>
+            <a href="mailto:altanvirgroup@gmail.com" className="flex items-center gap-1.5 text-white/70 hover:text-amber-brand transition-colors">
+              <Mail size={13} strokeWidth={2} />
+              altanvirgroup@gmail.com
             </a>
           </div>
         </div>
@@ -136,11 +136,11 @@ export default function Header() {
           </div>
 
           <div className="border-t border-slate-border px-6 py-4 flex flex-col gap-2 text-base text-slate-muted">
-            <a href="tel:+971561277407" className="flex items-center gap-2 hover:text-emerald-brand">
-              <Phone size={14} /> 056 1277407
+            <a href="tel:00971553173594" className="flex items-center gap-2 hover:text-emerald-brand">
+              <Phone size={14} /> 00971553173594
             </a>
-            <a href="mailto:info@al-tanwir.com" className="flex items-center gap-2 hover:text-emerald-brand">
-              <Mail size={14} /> info@al-tanwir.com
+            <a href="mailto:altanvirgroup@gmail.com" className="flex items-center gap-2 hover:text-emerald-brand">
+              <Mail size={14} /> altanvirgroup@gmail.com
             </a>
           </div>
         </div>
