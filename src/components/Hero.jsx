@@ -15,7 +15,7 @@ export default function Hero() {
     <section
       ref={sectionRef}
       id="hero"
-      className="relative min-h-[100vh] flex items-center overflow-hidden"
+      className="relative min-h-[100vh] flex flex-col justify-center overflow-hidden pt-[88px] lg:pt-[120px]"
     >
       {/* ── Cinematic Background Image ── */}
       <div className="absolute inset-0">
@@ -42,7 +42,7 @@ export default function Hero() {
       />
 
       {/* ── Content ── */}
-      <div className="relative z-10 mx-auto max-w-[90rem] px-6 py-32 lg:py-0 w-full">
+      <div className="relative z-10 mx-auto max-w-[90rem] px-6 py-12 lg:py-8 w-full">
         <div className="max-w-2xl">
           {/* Overline badge */}
           <div className="fade-up flex items-center gap-3 mb-8">
