@@ -1,33 +1,35 @@
 'use client'
-import { Target, TrendingUp, Users } from 'lucide-react'
+import { Briefcase, ShieldCheck, CheckCircle2, Handshake } from 'lucide-react'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 
 export default function VisionBanner() {
   const sectionRef = useScrollReveal()
 
-  const stats = [
+  const values = [
     {
-      icon: Target,
-      value: '#1',
-      label: 'Target Rank',
-      sublabel: 'FM Provider in UAE',
+      icon: Briefcase,
+      label: 'Practical Expertise',
+      description: 'Knowledge shaped by real assignments and market experience.',
     },
     {
-      icon: TrendingUp,
-      value: '2026',
-      label: 'Goal Year',
-      sublabel: 'Strategic Milestone',
+      icon: ShieldCheck,
+      label: 'Accountability',
+      description: 'Clear communication and responsible execution.',
     },
     {
-      icon: Users,
-      value: '3',
-      label: 'Sectors Served',
-      sublabel: 'Commercial · Industrial · Residential',
+      icon: CheckCircle2,
+      label: 'Quality Focus',
+      description: 'Careful attention to service and commercial standards.',
+    },
+    {
+      icon: Handshake,
+      label: 'Long-Term Value',
+      description: 'Relationships built beyond a single transaction.',
     },
   ]
 
   return (
-    <section id="vision" className="relative bg-slate-ink overflow-hidden">
+    <section id="about" className="relative bg-slate-ink overflow-hidden">
       {/* Subtle geometric grid overlay */}
       <div
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
@@ -42,34 +44,29 @@ export default function VisionBanner() {
         <div className="fade-up text-center mb-12 lg:mb-16">
           <span className="inline-flex items-center gap-2 text-base font-semibold tracking-[0.22em] uppercase text-amber-brand mb-4">
             <span className="w-8 h-px bg-amber-brand/60" />
-            Our Vision
+            About the Group
             <span className="w-8 h-px bg-amber-brand/60" />
           </span>
-          <h2 className="font-display font-bold text-white text-2xl sm:text-3xl lg:text-[2.25rem] tracking-tight leading-snug max-w-2xl mx-auto">
-            Targeting <span className="text-amber-brand">#1</span> Facility Management Provider Status in the UAE
-            by <span className="text-amber-brand">2026</span>
+          <h2 className="font-display font-bold text-white text-2xl sm:text-3xl lg:text-[2.25rem] tracking-tight leading-snug max-w-3xl mx-auto">
+            One group. <span className="text-amber-brand">Multiple strengths.</span>
           </h2>
+          <p className="mt-6 text-white/80 text-base leading-relaxed max-w-2xl mx-auto">
+            Al‑Tanwir Group connects sector-specific experience with a common commitment to reliability, transparency and long-term business relationships.
+          </p>
         </div>
 
-        {/* Stats grid */}
-        <div className="stagger-children grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8 max-w-3xl mx-auto">
-          {stats.map((stat, i) => (
-            <div key={stat.label} className="fade-up text-center group relative">
-              {/* Amber divider between stats (desktop only) */}
-              {i > 0 && (
-                <div className="absolute left-0 top-1/2 -translate-y-1/2 w-px h-16 bg-amber-brand/20 hidden sm:block" />
-              )}
-              <div className="inline-flex items-center justify-center w-12 h-12 border border-white/10 mb-4 group-hover:border-amber-brand/40 transition-colors">
-                <stat.icon size={22} className="text-amber-brand" strokeWidth={1.5} />
+        {/* Values grid */}
+        <div className="stagger-children grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 max-w-5xl mx-auto">
+          {values.map((val) => (
+            <div key={val.label} className="fade-up text-center group relative">
+              <div className="inline-flex items-center justify-center w-14 h-14 border border-white/10 mb-5 group-hover:border-amber-brand/40 transition-colors">
+                <val.icon size={26} className="text-amber-brand" strokeWidth={1.5} />
               </div>
-              <div className="text-3xl lg:text-4xl font-display font-extrabold text-white tracking-tight">
-                {stat.value}
+              <div className="text-lg font-display font-semibold text-white tracking-wide mb-2">
+                {val.label}
               </div>
-              <div className="text-base font-semibold text-white/80 tracking-wide mt-1">
-                {stat.label}
-              </div>
-              <div className="text-base text-white/40 mt-0.5">
-                {stat.sublabel}
+              <div className="text-[0.9375rem] text-white/60 leading-relaxed max-w-[14rem] mx-auto">
+                {val.description}
               </div>
             </div>
           ))}

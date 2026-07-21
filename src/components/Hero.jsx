@@ -48,37 +48,34 @@ export default function Hero() {
           <div className="fade-up flex items-center gap-3 mb-8">
             <span className="accent-line" />
             <span className="text-base font-semibold tracking-[0.2em] uppercase text-amber-brand">
-              Integrated Facility Solutions
+              United by trust and enterprise
             </span>
           </div>
 
-          {/* Headline */}
+          {/* Main heading */}
           <h1 className="fade-up font-display font-extrabold text-white text-[2.5rem] sm:text-[3.25rem] lg:text-[4rem] leading-[1.08] tracking-tight drop-shadow-2xl">
-            Managing Properties,
+            Building value across
             <br />
             <span className="relative inline-block mt-1">
-              Maximizing Returns
+              <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-brand to-emerald-300">
+                diverse industries
+              </span>
               <span className="absolute -bottom-2 left-0 w-full h-[3px] bg-amber-brand/90 drop-shadow-lg" />
             </span>
           </h1>
 
-          {/* Subheadline */}
+          {/* Description */}
           <p className="fade-up mt-7 text-white/90 text-[1.0625rem] sm:text-lg leading-relaxed max-w-xl font-medium drop-shadow-md">
-            Leading provider of sustainable, integrated facilities management solutions across
-            <span className="font-semibold text-white"> Commercial</span>,
-            <span className="font-semibold text-white"> Industrial</span>, and
-            <span className="font-semibold text-white"> Residential</span> sectors in the UAE.
+            Al‑Tanwir Group brings together specialist businesses in facilities management, gemstones, technical services, real estate and general trading across the UAE.
           </p>
 
-          {/* CTAs */}
+          {/* CTA Buttons */}
           <div className="fade-up mt-10 flex flex-wrap gap-4">
-            <a href="#contact" className="btn-primary">
-              Request Facility Audit
-              <ArrowRight size={16} strokeWidth={2.5} />
+            <a href="#companies" className="btn-primary">
+              Explore Our Companies <ArrowRight size={16} />
             </a>
-            <a href="#services" className="btn-secondary">
-              Explore Our Services
-              <ChevronDown size={16} strokeWidth={2.5} />
+            <a href="#contact" className="btn-secondary">
+              Contact the Group <ChevronDown size={16} />
             </a>
           </div>
 

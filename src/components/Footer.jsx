@@ -53,8 +53,8 @@ export default function Footer() {
                 />
               </div>
             </div>
-            <p className="text-white/60 leading-relaxed text-[0.9375rem] max-w-sm">
-              Al-Tanwir Facilities Management & Operation LLC — delivering sustainable, integrated facility solutions across the UAE.
+            <p className="mt-6 text-white/60 text-base leading-relaxed max-w-sm">
+              Al-Tanwir Group of Companies — Diverse expertise. One trusted name. Delivering value across the UAE.
             </p>
 
             {/* ISO mini badges */}
@@ -68,43 +68,31 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Col 2 — Company */}
-          <div>
-            <h4 className="text-base font-semibold tracking-[0.18em] uppercase text-white/40 mb-5">
-              Company
+          {/* Col 2 — Our Companies */}
+          <div className="lg:ml-auto">
+            <h4 className="text-sm font-semibold tracking-[0.15em] uppercase text-white mb-6 flex items-center gap-2">
+              <span className="w-4 h-px bg-amber-brand"></span>
+              Our Companies
             </h4>
-            <ul className="space-y-2.5">
-              {companyLinks.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-base text-white/60 hover:text-amber-brand transition-colors flex items-center gap-1.5 group"
-                  >
-                    <span className="w-1 h-1 bg-emerald-brand/60 group-hover:bg-amber-brand transition-colors" />
-                    {link.label}
-                  </a>
-                </li>
-              ))}
+            <ul className="space-y-3.5">
+              <li><a href="/facilities" className="text-white/60 hover:text-amber-brand hover:translate-x-1 inline-block transition-all text-base">Facilities Management</a></li>
+              <li><a href="/gemstones" className="text-white/60 hover:text-amber-brand hover:translate-x-1 inline-block transition-all text-base">Diamonds & Gemstones</a></li>
+              <li><a href="/technical" className="text-white/60 hover:text-amber-brand hover:translate-x-1 inline-block transition-all text-base">Technical Services</a></li>
+              <li><a href="/real-estate" className="text-white/60 hover:text-amber-brand hover:translate-x-1 inline-block transition-all text-base">Real Estate</a></li>
+              <li><a href="/general-trading" className="text-white/60 hover:text-amber-brand hover:translate-x-1 inline-block transition-all text-base">General Trading</a></li>
             </ul>
           </div>
 
-          {/* Col 3 — Services */}
+          {/* Col 3 — Quick Links */}
           <div>
             <h4 className="text-base font-semibold tracking-[0.18em] uppercase text-white/40 mb-5">
-              Services
+              Quick Links
             </h4>
             <ul className="space-y-2.5">
-              {quickLinks.map((link) => (
-                <li key={link.label}>
-                  <a
-                    href={link.href}
-                    className="text-base text-white/60 hover:text-amber-brand transition-colors flex items-center gap-1.5 group"
-                  >
-                    <span className="w-1 h-1 bg-emerald-brand/60 group-hover:bg-amber-brand transition-colors" />
-                    {link.label}
-                  </a>
-                </li>
-              ))}
+              <li><a href="#vision" className="text-base text-white/60 hover:text-amber-brand transition-colors flex items-center gap-1.5 group"><span className="w-1 h-1 bg-emerald-brand/60 group-hover:bg-amber-brand transition-colors" />About Us</a></li>
+              <li><a href="#services" className="text-base text-white/60 hover:text-amber-brand transition-colors flex items-center gap-1.5 group"><span className="w-1 h-1 bg-emerald-brand/60 group-hover:bg-amber-brand transition-colors" />Our Services</a></li>
+              <li><a href="#accreditations" className="text-base text-white/60 hover:text-amber-brand transition-colors flex items-center gap-1.5 group"><span className="w-1 h-1 bg-emerald-brand/60 group-hover:bg-amber-brand transition-colors" />Accreditations</a></li>
+              <li><a href="#contact" className="text-base text-white/60 hover:text-amber-brand transition-colors flex items-center gap-1.5 group"><span className="w-1 h-1 bg-emerald-brand/60 group-hover:bg-amber-brand transition-colors" />Request a Quote</a></li>
             </ul>
           </div>
 
@@ -122,19 +110,19 @@ export default function Footer() {
                 </p>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-amber-brand group-hover:text-slate-ink transition-colors">
-                  <Phone size={16} className="text-white/70 group-hover:text-slate-ink transition-colors" />
+                <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
+                  <Phone size={16} className="text-white/70" />
                 </div>
                 <div>
                   <h4 className="text-[0.7rem] font-semibold tracking-[0.1em] uppercase text-white/40 mb-1.5">Emergency / 24/7 Support</h4>
-                  <a href="tel:00971553173594" className="block hover:text-amber-brand transition-colors">00971553173594</a>
+                  <a href="tel:00971553173594" className="block hover:text-amber-brand transition-colors text-white/60">00971553173594</a>
                 </div>
               </div>
 
               {/* Email */}
               <div className="flex items-center gap-4">
-                <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:bg-amber-brand group-hover:text-slate-ink transition-colors">
-                  <Mail size={16} className="text-white/70 group-hover:text-slate-ink transition-colors" />
+                <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
+                  <Mail size={16} className="text-white/70" />
                 </div>
                 <div>
                   <h4 className="text-[0.7rem] font-semibold tracking-[0.1em] uppercase text-white/40 mb-1.5">Email Inquiries</h4>
@@ -149,8 +137,8 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="border-t border-white/[0.08] pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-base text-white/30">
-            © {new Date().getFullYear()} Al-Tanwir Facilities Management & Operation LLC. All rights reserved.
+          <p className="text-white/40 text-sm">
+            &copy; {new Date().getFullYear()} Al-Tanwir Group of Companies. All rights reserved.
           </p>
           <button
             onClick={scrollToTop}

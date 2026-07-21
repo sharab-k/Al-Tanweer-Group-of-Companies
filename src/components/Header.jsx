@@ -41,6 +41,14 @@ export default function Header() {
               <MapPin size={13} strokeWidth={2} />
               <span className="text-white/70">Musaffah 14, Abu Dhabi, UAE</span>
             </span>
+          <nav className="hidden lg:flex items-center gap-6">
+            <a href="/" className="text-[15px] font-semibold tracking-wide text-white hover:text-amber-brand transition-colors">Group Home</a>
+            <a href="/facilities" className="text-[15px] font-semibold tracking-wide text-white hover:text-amber-brand transition-colors">Facilities</a>
+            <a href="/gemstones" className="text-[15px] font-semibold tracking-wide text-white hover:text-amber-brand transition-colors">Gemstones</a>
+            <a href="/technical" className="text-[15px] font-semibold tracking-wide text-white hover:text-amber-brand transition-colors">Technical</a>
+            <a href="/real-estate" className="text-[15px] font-semibold tracking-wide text-white hover:text-amber-brand transition-colors">Real Estate</a>
+            <a href="/general-trading" className="text-[15px] font-semibold tracking-wide text-white hover:text-amber-brand transition-colors">Trading</a>
+          </nav>
           </div>
           <div className="flex items-center gap-5">
             <a href="tel:00971553173594" className="flex items-center gap-1.5 text-white/70 hover:text-amber-brand transition-colors">
@@ -135,13 +143,13 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="border-t border-slate-border px-6 py-4 flex flex-col gap-2 text-base text-slate-muted">
-            <a href="tel:00971553173594" className="flex items-center gap-2 hover:text-emerald-brand">
-              <Phone size={14} /> 00971553173594
-            </a>
-            <a href="mailto:altanvirgroup@gmail.com" className="flex items-center gap-2 hover:text-emerald-brand">
-              <Mail size={14} /> altanvirgroup@gmail.com
-            </a>
+          <div className="px-6 py-8 flex flex-col gap-6 text-xl font-display font-medium text-slate-ink">
+            <a href="/" className="hover:text-amber-brand transition-colors">Group Home</a>
+            <a href="/facilities" className="hover:text-amber-brand transition-colors">Facilities Management</a>
+            <a href="/gemstones" className="hover:text-amber-brand transition-colors">Diamonds & Gemstones</a>
+            <a href="/technical" className="hover:text-amber-brand transition-colors">Technical Services</a>
+            <a href="/real-estate" className="hover:text-amber-brand transition-colors">Real Estate</a>
+            <a href="/general-trading" className="hover:text-amber-brand transition-colors">General Trading</a>
           </div>
         </div>
       </div>

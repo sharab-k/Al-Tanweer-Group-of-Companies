@@ -8,6 +8,11 @@ export const IMAGES = {
   landscaping: '/service-landscaping.png',
   painting: '/service-painting.png',
   contact: '/contact-manager.png',
+  gemstonesCover: '/gemstones-cover.png',
+  technicalCover: '/technical-cover.png',
+  realEstateCover: '/real-estate-cover.png',
+  tradingCover: '/trading-cover.png',
+  facilitiesCover: '/facilities-cover.png',
 }
 
 // Source image locations (for the copy step):
